@@ -36,7 +36,7 @@ const VideoDetails = () => {
             <ReactPlayer
               url={`https://www.youtube.com/watch?v=${id}`}
               className="react-player"
-              controls={true}
+              controls
             />
             <Typography color="#fff" variant="h5" fontWeight="bold" p={2}>
               {title}
@@ -47,6 +47,7 @@ const VideoDetails = () => {
               sx={{ color: "#fff" }}
               py={1}
               px={2}
+              overflowY="scroll"
             >
               <Link to={`/channel/${channelId}`}>
                 <Typography
